@@ -29,7 +29,10 @@ class MenuBuilder:
         avaliable_dishes = []
 
         for dish in self.menu_data.dishes:
-            if restriction not in dish.get_restrictions():
+            if (
+                restriction not in dish.get_restrictions() and
+                self.inventory.check_recipe_availability(dish.recipe)
+            ):
                 avaliable_dishes.append({
                     "dish_name": dish.name,
                     "ingredients": dish.get_ingredients(),

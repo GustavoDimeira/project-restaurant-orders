@@ -27,10 +27,13 @@ class InventoryMapping:
 
     # Req 5.1
     def check_recipe_availability(self, recipe: Recipe):
-        for ingredient in recipe:
-            if (self.inventory[ingredient] < recipe[ingredient]):
-                return False
-        return True
+        try:
+            for ingredient in recipe:
+                if (self.inventory[ingredient] < recipe[ingredient]):
+                    return False
+            return True
+        except KeyError:
+            return False
 
     # Req 5.2
     def consume_recipe(self, recipe: Recipe) -> None:
