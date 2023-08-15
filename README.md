@@ -1,5 +1,6 @@
+# O que foi desenvolvido
+
 <details>
-  <summary><strong>👨‍💻 O que foi desenvolvido</strong></summary>
   <p>
     Nesse projeto foram desenvolvidas funções com o intuito de ser um cardapio virutal de um restaurante fictisio chamado "Chapa Quente".</br>
     Com todas as funções implementadas, o projeto é capaz de gera seu cardápios considerando possíveis restrições alimentares e também a disponibilidade dos ingredientes em estoque
@@ -154,6 +155,8 @@ Legenda:
   pytest -x tests/nomedoarquivo.py::test_nome_do_teste
   ```
 </details>
+
+# Requisitos
 
 ## 3 - Mapeamento Pratos <> Ingredientes
 
